@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class DiagonalDifference {
 
 	// https://www.hackerrank.com/challenges/diagonal-difference/problem
+
+
 	public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
