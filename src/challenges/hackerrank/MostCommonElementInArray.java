@@ -8,27 +8,6 @@ import java.util.Scanner;
 
 public class MostCommonElementInArray {
 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int n = in.nextInt();
-		int[] numbers = new int[n];
-		for (int i = 0; i < n; i++) {
-			numbers[i] = in.nextInt();
-		}
-		/* 
-		 	Example of input:
-
-			6
-			1 3 1 3 2 1
-			
-			Example of output:
-
-			1
-
-		*/
-		System.out.println(most_frequent(numbers));
-	}
-
 	static int most_frequent(int given_array[]) {
 		Integer result = null;
 		Arrays.sort(given_array);
@@ -46,5 +25,29 @@ public class MostCommonElementInArray {
 		
 		//System.out.println("The key " + entry.getKey() + " appears " + entry.getValue() + " times.");
 		return entry.getKey();
+	}
+	
+	/* 
+	 	Example of input:
+	
+		6
+		1 3 1 3 2 1
+
+		Where 6 is the size of array.
+		And 1 3 1 3 2 1 are the elements of the array.
+		
+		Example of output:
+	
+		1
+	 */
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int[] numbers = new int[n];
+		for (int i = 0; i < n; i++) {
+			numbers[i] = in.nextInt();
+		}
+		System.out.println(most_frequent(numbers));
 	}
 }
