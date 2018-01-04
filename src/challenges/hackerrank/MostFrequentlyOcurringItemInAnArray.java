@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
 
-public class MostCommonElementInArray {
+public class MostFrequentlyOcurringItemInAnArray {
 
 	static int most_frequent(int given_array[]) {
 		Integer result = null;
